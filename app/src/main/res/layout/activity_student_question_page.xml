@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentQuestionPage">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewQuestionCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="\n\nCounter" />
+
+            <TextView
+                android:id="@+id/textViewSurveyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="\n\nSurveyTitle" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/textViewQuestionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="96dp"
+                    android:layout_weight="1"
+                    android:text="Question Will be displayed here " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="294dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/AnswerGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButtonSagree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Strongly Agree" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAgree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Agree" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNeither"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Neither Agree Nor Disagree" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonDisagree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disagree" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSdisagree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Strongly Disagree" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonNextConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="nextBtn"
+                android:text="Next" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
