@@ -15,7 +15,7 @@ class NewAccount : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_account)
         var switchA = findViewById<Switch>(R.id.AdminRegisterSwitch)
-        switchA.setClickable(false)
+//        switchA.setClickable(false)
     }
 
     fun registerUser(view: View){

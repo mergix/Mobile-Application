@@ -37,9 +37,9 @@ class AdminHome : AppCompatActivity() {
 
 
     fun Createbtn(view: View){
-       var surveyId =  findViewById<TextView>(R.id.textViewId).text.toString()
+//       var surveyId =  findViewById<TextView>(R.id.textViewId).text.toString()
         val intent = Intent(this, AdminCreateSurvey::class.java).apply {
-            putExtra(EXTRA_MESSAGE, surveyId)
+//            putExtra(EXTRA_MESSAGE, surveyId)
         }
         startActivity(intent)
     }
